@@ -1,0 +1,67 @@
+/* ========================================
+   VenturaFin - Users Page Styles
+   ======================================== */
+
+.user-actions-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+/* Status badges in table */
+.status-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.status-toggle.active {
+    background: var(--color-income-bg);
+    color: var(--color-income);
+}
+
+.status-toggle.inactive {
+    background: var(--bg-hover);
+    color: var(--text-tertiary);
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+/* User row avatar */
+.user-row-avatar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-mini-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.user-mini-avatar span {
+    color: white;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+}
+
+.user-mini-avatar.admin-avatar {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+}
